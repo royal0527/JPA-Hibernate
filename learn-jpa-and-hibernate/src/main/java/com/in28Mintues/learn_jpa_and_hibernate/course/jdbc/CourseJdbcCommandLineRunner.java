@@ -12,6 +12,6 @@ public class CourseJdbcCommandLineRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        courseJdbcRepository.insert();
+        courseJdbcRepository.insert(new Course(1L,"gcp","Rajusk0527"));
     }
 }
